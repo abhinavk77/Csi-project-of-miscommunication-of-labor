@@ -1,0 +1,405 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #90B2D2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page {
+    color: white;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+}
+
+.main-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3A5F34;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #111827;
+}
+
+.find-job {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #4b5563;
+}
+
+.hire-now-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.375rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    background: linear-gradient(to bottom, #90B2D2, #3F4FB7), url('hero-background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-heading {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    font-size: 1.25rem;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+/* Style for the content container */
+.content-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center;
+    gap: 4rem; /* Increase space between the images */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex-direction: row; /* Left-to-right layout */
+}
+
+/* Left side image (together at the office) */
+.left-illustrations {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Move the image further to the left */
+    align-items: center;
+    padding-left: 2rem; /* Add padding to push it further left */
+}
+
+.team-image {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.team-image:hover {
+    transform: scale(1.1);
+}
+
+/* Center image (handshake) */
+.handshake-container {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+}
+
+.handshake-image {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.handshake-image:hover {
+    transform: scale(1.1);
+}
+
+/* Remove the icon-grid and icon-circle styles */
+.icon-grid,
+.icon-circle,
+.worker-icon,
+.social-links {
+    display: none; /* Hide these elements */
+}
+
+/* Style for the "Find a job" button */
+.find-job-btn {
+    background-color: #f3f4f6; /* Light gray background */
+    color: #4b5563; /* Dark gray text */
+    border: 1px solid #e5e7eb; /* Border color */
+    border-radius: 0.375rem; /* Rounded corners */
+    padding: 0.375rem 0.75rem; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+.find-job-btn:hover {
+    background-color: #e5e7eb; /* Slightly darker gray on hover */
+    color: #111827; /* Darker text color on hover */
+}
+
+.cta-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.2s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05);
+}
+
+.learn-more-btn {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+.learn-more-btn:hover {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.get-started-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.get-started-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Remove testimonials section styles */
+.testimonials {
+    display: none; /* Hide the testimonials section */
+}
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #3b82f6;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .content-container {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    
+    .left-illustrations {
+        justify-content: center; /* Center align on smaller screens */
+        padding-left: 0; /* Remove padding for smaller screens */
+    }
+    
+    .team-image,
+    .handshake-image {
+        max-width: 100%;
+    }
+}
+
+/* Style for the icon column */
+.icon-column {
+    display: flex;
+    flex-direction: column; /* Align icons vertically */
+    justify-content: center; /* Center icons vertically */
+    align-items: center; /* Center icons horizontally */
+    gap: 1rem; /* Space between icons */
+    padding-left: 1rem; /* Add space between handshake image and icons */
+}
+
+/* Style for the small icons */
+.small-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* Ensure the icons maintain their aspect ratio */
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.small-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Circular layout for small icons with rotation */
+.icon-circle {
+    position: relative;
+    width: 250px; /* Diameter of the circle */
+    height: 250px;
+    margin: 0 auto; /* Center the circle */
+    border-radius: 50%; /* Make the container circular */
+    animation: rotate-circle 10s linear infinite; /* Continuous rotation */
+    display: block; /* Ensure the container is visible */
+}
+
+.small-icon {
+    position: absolute;
+    width: 60px; /* Slightly larger width for the icons */
+    height: 60px; /* Slightly larger height for the icons */
+    object-fit: contain; /* Ensure the icons maintain their aspect ratio */
+    transition: transform 0.3s ease; /* Add a hover effect */
+    display: block; /* Ensure the icons are visible */
+}
+
+/* Position icons around the circle */
+.small-icon:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-icon:nth-child(2) {
+    top: 25%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.small-icon:nth-child(3) {
+    top: 75%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.small-icon:nth-child(4) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.small-icon:nth-child(5) {
+    top: 75%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hover effect for icons */
+.small-icon:hover {
+    transform: scale(1.3); /* Slightly enlarge the icon on hover */
+}
+
+/* Animation for rotating the circle */
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Social Media Links Section */
+.social-media-links {
+    background-color: #f9fafb;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social-media-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between icons */
+}
+
+.social-icon img {
+    width: 40px; /* Set icon size */
+    height: 40px;
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.social-icon img:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
