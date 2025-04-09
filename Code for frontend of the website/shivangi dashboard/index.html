@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="logo-nav">
+            <div class="logo">
+                <img src="https://via.placeholder.com/50" alt="Company Logo">
+            </div>
+            <nav>
+                <button>Home</button>
+                <button>Post a Job</button>
+                <button>My Job</button>
+                <button>Report</button>
+                <button>Help</button>
+                <button>Settings</button>
+            </nav>
+        </div>
+        <div class="header-actions">
+            <button class="notification-btn">🔔</button>
+            <button class="search-btn">🔍</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="dashboard-title">Dashboard</h1>
+
+        <div class="dashboard-grid">
+            <!-- Job Posting Panel -->
+            <div class="panel">
+                <div class="panel-title">Job Posting</div>
+                
+                <div class="job-details">
+                    <h3>Job Title:</h3>
+                    <p>Junior Interior Designer</p>
+                </div>
+                
+                <div class="job-details">
+                    <h3>Location:</h3>
+                    <p>Pune, Maharashtra</p>
+                </div>
+                
+                <div class="job-details">
+                    <h3>Job Description:</h3>
+                    <p>We are looking for a passionate and creative Junior Interior Designer to join our team at Patel Constructions & Renovations Pvt. Ltd. The role involves assisting senior designers with residential and commercial projects, creating layouts, and ensuring timely execution of designs.</p>
+                </div>
+                
+                <div class="job-details">
+                    <h3>Skills Required:</h3>
+                    <ul class="skills-list">
+                        <li>Proficiency in design tools (AutoCAD, SketchUp, or similar software)</li>
+                        <li>Knowledge of material selection and colour schemes</li>
+                        <li>Strong creativity and attention to detail</li>
+                        <li>Excellent communication and teamwork skills</li>
+                        <li>Basic understanding of project management</li>
+                    </ul>
+                </div>
+                
+                <div class="job-details">
+                    <h3>Salary/Pay:</h3>
+                    <p>₹25,000 – ₹35,000 per month</p>
+                </div>
+                
+                <div class="job-details">
+                    <h3>Job Status:</h3>
+                    <span class="status-badge">Active</span>
+                </div>
+            </div>
+
+            <!-- Job Status Tracker Panel -->
+            <div class="panel">
+                <div class="panel-title">Job Status Tracker</div>
+                
+                <ul class="status-list">
+                    <li>
+                        <span>• Pending Jobs:</span>
+                        <button class="click-here-btn">CLICK HERE</button>
+                    </li>
+                    <li>
+                        <span>• Active Jobs:</span>
+                        <button class="click-here-btn">CLICK HERE</button>
+                    </li>
+                    <li>
+                        <span>• Completed Jobs:</span>
+                        <button class="click-here-btn">CLICK HERE</button>
+                    </li>
+                </ul>
+                
+                <div class="graph-container">
+                    <img src="https://via.placeholder.com/400x200?text=Analysis+of+Labor+Applications+vs+Active+Jobs" alt="Job Applications Graph" class="graph-img">
+                </div>
+                
+                <div class="inbox-container">
+                    <div class="panel-title">Inbox</div>
+                    
+                    <div class="message">
+                        <div class="message-avatar"></div>
+                        <div class="message-content">
+                            "Hello, I am Mahesh, a skilled carpenter with 10 yr experience. Are there any ongoing projects where you..."
+                        </div>
+                    </div>
+                    
+                    <div class="message">
+                        <div class="message-avatar"></div>
+                        <div class="message-content">
+                            "Good day! I heard you're looking for workers for the specific project. Could you share more details about the job requirements and timeline?"
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Panel -->
+            <div class="panel panel-profile">
+                <div class="profile-header">
+                    <h2>Profile</h2>
+                    <button class="more-options">⋮</button>
+                </div>
+                
+                <div class="profile-info">
+                    <div class="profile-avatar"></div>
+                    <div class="profile-name">ARJUN SHARMA</div>
+                </div>
+                
+                <div class="company-info">
+                    <h3>Company Name:</h3>
+                    <p>Patel Constructions & Renovations Pvt. Ltd</p>
+                </div>
+                
+                <div class="job-history">
+                    <h3>Job History:</h3>
+                    
+                    <div class="project-item">
+                        <div class="project-title">
+                            <span>• Project 1:</span>
+                            <span class="project-name">Luxury Apartment Interior</span>
+                        </div>
+                        <div class="rating">
+                            <span>Rating:</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">
+                            <span>• Project 2:</span>
+                            <span class="project-name">Commercial Office Space Remodeling</span>
+                        </div>
+                        <div class="rating">
+                            <span>Rating:</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-title">
+                            <span>• Project 3:</span>
+                            <span class="project-name">Modern Villa Landscaping</span>
+                        </div>
+                        <div class="rating">
+                            <span>Rating:</span>
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="payment-info">
+                    <div class="payment-row">
+                        <h3>Payment Info:</h3>
+                        <button class="click-here-btn">CLICK HERE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

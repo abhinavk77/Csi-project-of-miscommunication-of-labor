@@ -1,0 +1,297 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #BAE6FD;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #0D9488;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+nav button:hover {
+    background-color: #0F766E;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-btn {
+    background-color: #0F766E;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Main Content */
+.container {
+    padding: 20px;
+}
+
+h1.dashboard-title {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 992px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Panels */
+.panel {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.panel-profile {
+    background-color: #0D9488;
+    color: white;
+}
+
+.panel-title {
+    background-color: #0D9488;
+    color: white;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Job Posting Panel */
+.job-details {
+    margin-bottom: 15px;
+}
+
+.job-details h3 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skills-list {
+    list-style-position: inside;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.status-badge {
+    background-color: #0D9488;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+/* Job Status Tracker Panel */
+.status-list {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.status-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.click-here-btn {
+    background-color: #F87171;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.graph-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.graph-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.inbox-container {
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    flex-shrink: 0;
+}
+
+.message-content {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Profile Panel */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.more-options {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.company-info, .job-history, .payment-info {
+    margin-bottom: 20px;
+}
+
+.company-info h3, .job-history h3, .payment-info h3 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.project-item {
+    margin-bottom: 15px;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.project-name {
+    font-size: 12px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.stars {
+    color: #FFD700;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
